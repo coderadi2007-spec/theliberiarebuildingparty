@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head><title>Join Movement | Liberia Rebuilding Party</title><meta name="description" content="Join the REBUILDERS movement — get in touch, volunteer, join the party, or subscribe to updates." /><meta property="og:title" content="Join Movement | Liberia Rebuilding Party" /><meta property="og:description" content="Join the REBUILDERS movement — get in touch, volunteer, join the party, or subscribe to updates." /><meta property="og:type" content="website" /><meta name="twitter:card" content="summary_large_image" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="theme-color" content="#0f1a3d" />
+<meta name="author" content="Liberia Rebuilding Party" />
+<link rel="icon" href="images/logo.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/pages.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head><body>
+<div id="loader" class="loader" aria-hidden="true">
+  <div class="loader__spinner"></div>
+  <div class="loader__brand">The REBUILDERS — Rebuilding Liberia</div>
+</div>
+<div id="mouseGlow" class="mouse-glow" aria-hidden="true"></div>
+
+<header class="navbar" id="navbar">
+  <div class="container">
+    <div class="navbar__inner">
+      <a href="index.html" class="brand" aria-label="Liberia Rebuilding Party home">
+        <span class="brand__logo"><img src="images/logo.jpg" alt="LRP logo" width="44" height="44"></span>
+        <span class="brand__text">
+          <span class="name">Liberia Rebuilding Party</span>
+          <span class="brand__sub">The Rebuilders</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__link" href="index.html">Home</a>
+        <a class="nav__link" href="about.html">About</a>
+        <a class="nav__link" href="manifesto.html">Manifesto</a>
+        <a class="nav__link" href="leadership.html">Leadership</a>
+        <a class="nav__link" href="news.html">News</a>
+        <a class="nav__link" href="events.html">Events</a>
+        <a class="nav__link" href="volunteer.html">Volunteer</a>
+        <a class="btn btn--primary btn--sm nav__cta" href="join-movement.html">Join Movement</a>
+      </nav>
+      <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div id="overlay" class="overlay" aria-hidden="true"></div>
+<aside id="mobileMenu" class="mobile-menu" aria-label="Mobile navigation">
+  <a href="index.html" data-nav>Home</a>
+  <a href="about.html" data-nav>About</a>
+  <a href="manifesto.html" data-nav>Manifesto</a>
+  <a href="leadership.html" data-nav>Leadership</a>
+  <a href="news.html" data-nav>News</a>
+  <a href="events.html" data-nav>Events</a>
+  <a href="volunteer.html" data-nav>Volunteer</a>
+  <a class="btn btn--primary" href="join-movement.html">Join Movement</a>
+</aside>
+
+<main class="page-fade">
+<section class="page-hero">
+  <div class="container">
+    <div class="crumbs"><a href="index.html">Home</a><span>/</span> Join Movement</div>
+    <h1>Join the Movement</h1>
+    <p>Rain or Shine, Rebuild Liberia. Send a message, sign up to volunteer, join the party, or subscribe to updates from the REBUILDERS national team.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+      <form id="contactForm" class="form" novalidate>
+        <div class="form__row">
+          <div class="field">
+            <label for="name">Full Name <span class="req">*</span></label>
+            <input id="name" name="name" type="text" required maxlength="80" autocomplete="name" />
+            <span class="err-msg"></span>
+          </div>
+          <div class="field">
+            <label for="email">Email <span class="req">*</span></label>
+            <input id="email" name="email" type="email" required maxlength="120" autocomplete="email" />
+            <span class="err-msg"></span>
+          </div>
+        </div>
+
+        <div class="form__row">
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" maxlength="30" autocomplete="tel" />
+            <span class="err-msg"></span>
+          </div>
+          <div class="field">
+            <label for="county">County / City</label>
+            <input id="county" name="county" type="text" maxlength="60" />
+            <span class="err-msg"></span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject">
+            <option>Join the Movement</option>
+            <option>Volunteer Interest</option>
+            <option>Media Inquiry</option>
+            <option>Partnership</option>
+            <option>General Question</option>
+          </select>
+          <span class="err-msg"></span>
+        </div>
+
+        <div class="field">
+          <label for="message">Your Message <span class="req">*</span></label>
+          <textarea id="message" name="message" required maxlength="2000" placeholder="Tell us how you want to help rebuild Liberia."></textarea>
+          <span class="err-msg"></span>
+        </div>
+
+        <div class="field">
+          <label style="display:flex;align-items:center;gap:.5rem;font-weight:500;justify-content:flex-start;text-align:left;cursor:pointer">
+            <input type="checkbox" style="width:18px;height:18px;flex-shrink:0;padding:0;border:1px solid #ccc;accent-color:#c8102e" name="joinVolunteer" value="yes" /> Sign me up as a Volunteer
+          </label>
+          <label style="display:flex;align-items:center;gap:.5rem;font-weight:500;justify-content:flex-start;text-align:left;cursor:pointer">
+            <input type="checkbox" style="width:18px;height:18px;flex-shrink:0;padding:0;border:1px solid #ccc;accent-color:#c8102e" name="joinParty" value="yes" /> I want to Join the Party
+          </label>
+          <label style="display:flex;align-items:center;gap:.5rem;font-weight:500;justify-content:flex-start;text-align:left;cursor:pointer">
+            <input type="checkbox" style="width:18px;height:18px;flex-shrink:0;padding:0;border:1px solid #ccc;accent-color:#c8102e" name="newsletter" value="yes" checked /> Subscribe me to the Rebuilders Newsletter
+          </label>
+        </div>
+
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+
+        <button type="submit" class="btn btn--primary form__submit">Send Message</button>
+      </form>
+
+      <aside class="contact-info info-card">
+        <h3>Reach the Rebuilders</h3>
+        <p>Send your message and our national team will get back to you. You can also reach us directly:</p>
+        <div class="info-item">
+          <div class="info-item__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div class="info-item__body">
+            <strong>Headquarters</strong>
+            <span>24th Street / Russell Avenue, Sinkor, Monrovia, Liberia</span>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-item__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2z"/></svg></div>
+          <div class="info-item__body">
+            <strong>Phone</strong>
+            <a href="tel:+231777561922">+231 777 561 922</a>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-item__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></svg></div>
+          <div class="info-item__body">
+            <strong>Email</strong>
+            <a href="mailto:theliberiarebuildingparty@gmail.com" style="word-break:break-all">theliberiarebuildingparty@gmail.com</a>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-item__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+          <div class="info-item__body">
+            <strong>Founded</strong>
+            <span>May 30, 2023</span>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-item__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 1 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></div>
+          <div class="info-item__body">
+            <strong>Our Promise</strong>
+            <span>Integrity. Innovation. National Unity. Rain or Shine, Rebuild Liberia.</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+</main>
+
+<div id="resultModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="resultTitle">
+  <div class="modal__box">
+    <div id="resultIcon" class="modal__icon">&#10003;</div>
+    <h3 id="resultTitle">Message Received</h3>
+    <p id="resultMsg">Thank you! Your message has been delivered to the REBUILDERS team.</p>
+    <button class="btn btn--primary" data-close>Close</button>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="brand">
+          <span class="brand__logo"><img src="images/logo.jpg" alt="LRP logo"></span>
+          <span class="brand__text">
+            <span class="name">Liberia Rebuilding Party</span>
+            <span class="brand__sub">The Rebuilders</span>
+          </span>
+        </div>
+        <p class="footer__blurb">Rain or Shine, Rebuild Liberia. A movement of Integrity, Innovation and National Unity — restoring the Love of Liberty in the hearts of every Liberian.</p>
+        <div class="footer__social" aria-label="Social links">
+          <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5c0-1.1.4-2 2-2h2V2h-3c-3 0-5 1.8-5 5v3H6v4h3v8h4z"/></svg></a>
+          <a href="#" aria-label="Twitter/X"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h3l-7 8 8 12h-6l-5-7-6 7H2l7-9L1 2h6l4 6 5-6z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.5a3 3 0 0 0-2-2C19 5 12 5 12 5s-7 0-9 .5a3 3 0 0 0-2 2C.5 9.5.5 12 .5 12s0 2.5.5 4.5a3 3 0 0 0 2 2C5 19 12 19 12 19s7 0 9-.5a3 3 0 0 0 2-2c.5-2 .5-4.5.5-4.5s0-2.5-.5-4.5zM10 15V9l6 3-6 3z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html" class="link-underline">About</a></li>
+          <li><a href="manifesto.html" class="link-underline">Manifesto</a></li>
+          <li><a href="leadership.html" class="link-underline">Leadership</a></li>
+          <li><a href="news.html" class="link-underline">News</a></li>
+          <li><a href="events.html" class="link-underline">Events</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get Involved</h4>
+        <ul>
+          <li><a href="volunteer.html" class="link-underline">Volunteer</a></li>
+          <li><a href="join-movement.html" class="link-underline">Join Movement</a></li>
+          <li><a href="privacy.html" class="link-underline">Privacy Policy</a></li>
+          <li><a href="terms.html" class="link-underline">Terms of Use</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer__contact">
+          <li>24th Street / Russell Avenue,<br>Sinkor, Monrovia, Liberia</li>
+          <li><a href="tel:+231777561922">+231 777 561 922</a></li>
+          <li><a href="mailto:theliberiarebuildingparty@gmail.com">theliberiarebuildingparty@gmail.com</a></li>
+          <li>Founded: May 30, 2023</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div>&copy; <span data-year></span> Liberia Rebuilding Party. All rights reserved.</div>
+      <div><a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></div>
+    </div>
+  </div>
+</footer>
+
+<div class="float-actions">
+  <a class="float-btn wa" href="https://wa.me/231777561922" target="_blank" rel="noopener" aria-label="WhatsApp us">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 3.9A11 11 0 0 0 3.5 18l-1.4 5.1 5.2-1.4A11 11 0 1 0 20 3.9zm-8 18a9 9 0 0 1-4.6-1.3l-.3-.2-3.1.8.8-3-.2-.3A9 9 0 1 1 12 21.9zm5.1-6.7c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.6-1.5-.8-2c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.7 4.3 3.7 2.5 1 2.5.7 3 .7.5 0 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.2-.3-.3-.5-.4z"/></svg>
+  </a>
+  <button id="backToTop" class="float-btn top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 15 12 9 18 15"/></svg>
+  </button>
+</div>
+
+<script src="js/main.js" defer></script>
+<script src="js/navbar.js" defer></script>
+<script src="js/scroll.js" defer></script>
+<script src="js/animation.js" defer></script>
+<script src="js/slider.js" defer></script>
+<script src="js/form.js" defer></script>
+<script src="js/contact.js" defer></script>
+</body></html>

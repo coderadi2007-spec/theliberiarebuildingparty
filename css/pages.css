@@ -1,0 +1,18 @@
+/* Page-specific tweaks */
+.leadership-grid{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.manifesto p{font-size:1.05rem;color:var(--text-soft);max-width:760px}
+.manifesto__quote{
+  border-left:4px solid var(--red);padding:1.25rem 1.5rem;
+  background:var(--surface);border-radius:0 var(--radius) var(--radius) 0;
+  margin:2rem 0;font-style:italic;font-size:1.1rem;color:var(--navy-deep);
+}
+.legal{max-width:820px;margin:0 auto}
+.legal h2{margin-top:2.5rem}
+.legal p, .legal li{color:var(--text-soft);font-size:.98rem}
+.not-found{min-height:70vh;display:grid;place-items:center;text-align:center;padding:6rem 1rem 3rem}
+.not-found .big{
+  font-family:var(--font-display);font-weight:800;font-size:clamp(6rem,18vw,12rem);
+  line-height:1;background:var(--gradient-cta);-webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.contact-layout{display:grid;gap:2.5rem;grid-template-columns:1.4fr 1fr;align-items:start}
+@media(max-width:960px){.contact-layout{grid-template-columns:1fr}}
